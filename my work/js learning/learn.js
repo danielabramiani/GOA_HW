@@ -768,7 +768,6 @@ class BankAccount {
 }
 
 function main() {
-  // Example usage
   const account1 = new BankAccount(1, "John Doe");
   const account2 = new BankAccount(2, "Jane Doe", 1000);
 
