@@ -13,6 +13,11 @@ def elder_age(m,n,l,t):
     if loss_m == loss_n:
         return (sum_terms_in_range(1, loss_n - l - 1) * (m + n - loss_n) + elder_age(loss_n - n, loss_m - m, l, t)) % t
     
+
+
+
+
+    
     if loss_m < loss_n:
         loss_m = loss_n // 2
         aux = sum_terms_in_range(1, loss_n - l - 1) * m - (loss_n - n) * sum_terms_in_range(max(0, loss_m - l), loss_n - l - 1)
