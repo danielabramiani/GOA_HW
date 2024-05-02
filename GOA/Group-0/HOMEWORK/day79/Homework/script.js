@@ -1,5 +1,5 @@
 // 1. Transforming Data
-const people = [{name: 'Alice', age: 20}, {name: 'Boba', age: 10}, {name: 'Charlie', age: 22}];
+const people = [{name: 'Daniel', age: 13}, {name: 'Boba', age: 10}, {name: 'Someone', age: 20}];
 const names = people.map(person => person.name);
 console.log(names); 
 
@@ -17,7 +17,7 @@ const primeOrNot = numbers.map(num => isPrime(num));
 console.log(primeOrNot); 
 
 // 3. Filtering Data
-const students = [{name: 'Alice', grade: 85}, {name: 'Boba', grade: 75}, {name: 'Charlie', grade: 90}];
+const students = [{name: 'Daniel', grade: 85}, {name: 'Boba', grade: 75}, {name: 'Genius', grade: 90}];
 const passedStudents = students.filter(student => student.grade >= 80);
 console.log(passedStudents);
 
