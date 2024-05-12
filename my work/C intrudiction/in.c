@@ -37,3 +37,18 @@
 // %f is for floating point numbers
 // %c is for single characters
 // %s is for strings
+
+#include <stdio.h>
+
+int x = 50;
+int y = 50;
+
+if(x == y) {
+  printf("1");
+} 
+else if(x > y) {
+  printf("2");
+} 
+else{
+  printf("3");
+}
