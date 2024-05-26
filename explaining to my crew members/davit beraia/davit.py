@@ -14,6 +14,10 @@ name3 = "saba"
 name4 = "Mog" 
 
 #name = "daniel" print(name)
-#print(5 + 5)
+#print("5" + "5")
 
 print("hello world")
+
+#string 
+#integer 
+#float 2.02
