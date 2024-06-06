@@ -4,7 +4,7 @@ function formatDuration (seconds) {
   
     if (seconds === 0) return 'now';
     
-    for (var key in time) {
+    for (let key in time) {
       if (seconds >= time[key]) {
         let val = Math.floor(seconds/time[key]);
         res.push(val += val > 1 ? ' ' + key + 's' : ' ' + key);

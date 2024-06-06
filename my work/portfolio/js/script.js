@@ -41,25 +41,25 @@ let progressjs = setInterval(() => {
 }, jsspeed);
 
 // php progress circular bar 
-let phpProgress = document.querySelector(".php"),
-  phpValue = document.querySelector(".php-progress");
+let pythonProgress = document.querySelector(".python"),
+  pythonValue = document.querySelector(".python-progress");
 
-let phpStartValue = 0,
-  phpEndValue = 85,
-  phpspeed = 30;
+let pythonStartValue = 0,
+  pythonEndValue = 85,
+  pythonspeed = 30;
 
-let progressphp = setInterval(() => {
-  phpStartValue++;
+let progresspython = setInterval(() => {
+  pythonStartValue++;
 
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
+  pythonValue.textContent = `${pythonStartValue}%`;
+  pythonProgress.style.background = `conic-gradient(#20c997 ${
+    pythonStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
+  if (pythonStartValue == pythonEndValue) {
+    clearInterval(progresspython);
   }
-}, phpspeed);
+}, pythonspeed);
 
 // c progress circular bar 
 let reactProgress = document.querySelector(".reactjs"),
