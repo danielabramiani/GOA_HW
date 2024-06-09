@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Georgian';
+  }
+  
+  body{
+    background-color: #282828; 
+    color: white;
+    font-family: "Noto Sans Georgian", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  } 
+  span{
+      color: rgb(7, 161, 20);
+  }
+ 
+  
+  header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 190px;
+    list-style: none;
+    font-size: larger;
+  }
+  
+ 
+  
+  header nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+  
+  header nav ul li a:hover{
+    color: rgb(8, 112, 6);
+  }
+
+  #img{
+    width: 5%;
+    border-radius: 5%;
+    transition: 0.5s;
+    box-shadow: 5px 0px 4px 2px rgb(3, 86, 21);
+  }
+  
+  #img:hover{
+    box-shadow: 0px 2px 3px 5px rgb(8, 58, 23);
+    transform: translateY(-10%);
+  }
+
+  .img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: auto;
+    gap: 400px;
+    height: 80vh;
+  }
+  
+  .img-text h2{
+    font-size: 40px;
+    width: 400px;
+    text-shadow: 0px  5px rgb(31, 114, 5);
+  }
+  
+  .img{
+    width: 480px;
+  }
+  
+  .img img{
+    width: 150%;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .img img:hover{
+    transform: scale(1.05);
+  }
+
+  #stat{
+    padding: 30px 0;
+  }
+  .services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .image{
+    width: 190px;
+  }
+  .img{
+    width: 190px;
+  }
+  .services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 1.2s, transform 1.2s;
+  }
+  .services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .services-list div:hover{
+    background-color: rgb(14, 118, 6);
+    transform: translateY(-30px);
+  }

@@ -715,77 +715,94 @@
 //   console.log("Gio sou goooood")
 // }
 
-function Person(name,lastname,age,country,family) {
-  this.name = name;
-  this.lastname = lastname;
-  this.age = age;
-  this.country = country;
-  this.family = family;
+// function Person(name,lastname,age,country,family) {
+//   this.name = name;
+//   this.lastname = lastname;
+//   this.age = age;
+//   this.country = country;
+//   this.family = family;
+// }
+
+// Person.prototype.printInfo = function() {
+//   console.log(`Name: ${this.name}`);
+//   console.log(`Surname: ${this.lastname}`);
+//   console.log(`Age: ${this.age}`);
+//   console.log(`Age: ${this.country}`);
+//   console.log(`Age: ${this.family}`);
+// }
+
+// const person1 = new Person("Daniel", "Abramiani", "13","Georgia","Family With Father,Mother,Sister,Cat,Grandmas,Aunt,Grandpa and Cousin");
+
+
+// person1.printInfo();==
+
+
+// class BankAccount {
+//   constructor(account_number, account_holder, balance = 0) {
+//       this.account_number = account_number;
+//       this.account_holder = account_holder;
+//       this.balance = balance;
+//   }
+
+//   deposit(amount) {
+//       if (amount > 0) {
+//           this.balance += amount;
+//           console.log(`Deposited $${amount}. New balance: $${this.balance}`);
+//       } else {
+//           console.log("Invalid deposit amount. Please enter a positive value.");
+//       }
+//   }
+
+//   withdraw(amount) {
+//       if (amount > 0 && amount <= this.balance) {
+//           this.balance -= amount;
+//           console.log(`Withdrew $${amount}. New balance: $${this.balance}`);
+//       } else {
+//           console.log("Invalid withdrawal amount or insufficient funds.");
+//       }
+//   }
+
+//   get_balance() {
+//       return this.balance;
+//   }
+// }
+
+// function main() {
+//   const account1 = new BankAccount(1, "John Doe");
+//   const account2 = new BankAccount(2, "Jane Doe", 1000);
+
+//   let q1 = prompt("Would you like to see your initial balances?");
+//   if (q1.toLowerCase() === "yes") {
+//       console.log("Initial balances:");
+//       console.log(`Account ${account1.account_number}: $${account1.get_balance()}`);
+//       console.log(`Account ${account2.account_number}: $${account2.get_balance()}`);
+//   } else {
+//       console.log("ok");
+//   }
+
+//   account1.deposit(500);
+//   account2.withdraw(200);
+
+//   console.log("\nFinal balances:");
+//   console.log(`Account ${account1.account_number}: $${account1.get_balance()}`);
+//   console.log(`Account ${account2.account_number}: $${account2.get_balance()}`);
+// }
+
+// main();
+
+// let strings = ["leg day", "chest day", "back day"];
+
+// let addSome = strings.map(str => str + " tren");
+
+// console.log(addSome)
+
+
+function magic(...nums) {
+  let sum = 0;
+  nums.filter(n => n % 2 == 0).map(el => sum+= el);
+  return sum;
 }
+console.log(magic(1, 2, 3, 4, 5, 6));
 
-Person.prototype.printInfo = function() {
-  console.log(`Name: ${this.name}`);
-  console.log(`Surname: ${this.lastname}`);
-  console.log(`Age: ${this.age}`);
-  console.log(`Age: ${this.country}`);
-  console.log(`Age: ${this.family}`);
-}
-
-const person1 = new Person("Daniel", "Abramiani", "13","Georgia","Family With Father,Mother,Sister,Cat,Grandmas,Aunt,Grandpa and Cousin");
-
-
-person1.printInfo();==
-
-
-class BankAccount {
-  constructor(account_number, account_holder, balance = 0) {
-      this.account_number = account_number;
-      this.account_holder = account_holder;
-      this.balance = balance;
-  }
-
-  deposit(amount) {
-      if (amount > 0) {
-          this.balance += amount;
-          console.log(`Deposited $${amount}. New balance: $${this.balance}`);
-      } else {
-          console.log("Invalid deposit amount. Please enter a positive value.");
-      }
-  }
-
-  withdraw(amount) {
-      if (amount > 0 && amount <= this.balance) {
-          this.balance -= amount;
-          console.log(`Withdrew $${amount}. New balance: $${this.balance}`);
-      } else {
-          console.log("Invalid withdrawal amount or insufficient funds.");
-      }
-  }
-
-  get_balance() {
-      return this.balance;
-  }
-}
-
-function main() {
-  const account1 = new BankAccount(1, "John Doe");
-  const account2 = new BankAccount(2, "Jane Doe", 1000);
-
-  let q1 = prompt("Would you like to see your initial balances?");
-  if (q1.toLowerCase() === "yes") {
-      console.log("Initial balances:");
-      console.log(`Account ${account1.account_number}: $${account1.get_balance()}`);
-      console.log(`Account ${account2.account_number}: $${account2.get_balance()}`);
-  } else {
-      console.log("ok");
-  }
-
-  account1.deposit(500);
-  account2.withdraw(200);
-
-  console.log("\nFinal balances:");
-  console.log(`Account ${account1.account_number}: $${account1.get_balance()}`);
-  console.log(`Account ${account2.account_number}: $${account2.get_balance()}`);
-}
-
-main();
+//ფილტრით გამოგვაქვს ლუწი რიცხვები მანდ შევასრულეთ ისეთი ოპერაციები რომლის დახმარებითაც ჩვენ გამოვიტანეთ ყველა ლუწი რიცხვი რაც შევიტანეთ კონსოლში
+//ფილტრი ასე ვთქვათ ფილტრავს ყველაფერს ზედმეტს და ტოვებს ლუწ რიცხვებს და უმატებს ერთმანეთს                        
