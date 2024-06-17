@@ -797,12 +797,100 @@
 // console.log(addSome)
 
 
-function magic(...nums) {
-  let sum = 0;
-  nums.filter(n => n % 2 == 0).map(el => sum+= el);
-  return sum;
-}
-console.log(magic(1, 2, 3, 4, 5, 6));
+// function magic(...nums) {
+//   let sum = 0;
+//   nums.filter(n => n % 2 == 0).map(el => sum+= el);
+//   return sum;
+// }
+// console.log(magic(1, 2, 3, 4, 5, 6));
 
 //ფილტრით გამოგვაქვს ლუწი რიცხვები მანდ შევასრულეთ ისეთი ოპერაციები რომლის დახმარებითაც ჩვენ გამოვიტანეთ ყველა ლუწი რიცხვი რაც შევიტანეთ კონსოლში
-//ფილტრი ასე ვთქვათ ფილტრავს ყველაფერს ზედმეტს და ტოვებს ლუწ რიცხვებს და უმატებს ერთმანეთს                        
+//ფილტრი ასე ვთქვათ ფილტრავს ყველაფერს ზედმეტს და ტოვებს ლუწ რიცხვებს და უმატებს ერთმანეთს         
+
+
+//1
+
+const inventory = {
+  sunglasses: 1900,
+  pants: 1088,
+  bags: 1344
+};
+
+// Write your code below:
+const myExecutor = (resolve, reject) => {
+    if (inventory.sunglasses > 0) {
+        resolve('Sunglasses order processed.');
+    } else {
+        reject('That item is sold out.');
+    }
+};
+
+const orderSunglasses = () => {
+    return new Promise(myExecutor);
+};
+
+const orderPromise = orderSunglasses();
+
+console.log(orderPromise);     
+
+//2
+
+console.log("This is the first line of code in app.js.");
+
+function usingSTO() {
+  console.log("Executing usingSTO function.");
+}
+
+setTimeout(usingSTO, 2000);
+
+//3
+
+const { checkInventory } = require('./library.js');
+
+const order = [['sunglasses', 1], ['bags', 2]];
+
+checkInventory(order)
+  .then(handleSuccess, handleFailure);
+
+  //4
+
+  const { checkInventory } = require('./library.js');
+
+const order = [['sunglasses', 1], ['bags', 2]];
+
+const handleSuccess = (resolvedValue) => {
+  console.log(resolvedValue);
+};
+
+const handleFailure = (rejectReason) => {
+  console.log(rejectReason);
+};
+
+checkInventory(order)
+  .then(handleSuccess)
+  .catch(handleFailure);
+
+  //5
+
+  const {checkInventory, processPayment, shipOrder} = require('./library.js');
+
+const order = {
+  items: [['sunglasses', 1], ['bags', 2]],
+  giftcardBalance: 79.82
+};
+
+checkInventory(order)
+.then((resolvedValueArray) => {
+  // Write the correct return statement here:
+ return processPayment(resolvedValueArray);
+})
+.then((resolvedValueArray) => {
+  // Write the correct return statement here:
+  return shipOrder(resolvedValueArray);
+})
+.then((successMessage) => {
+  console.log(successMessage);
+})
+.catch((errorMessage) => {
+  console.log(errorMessage);
+});

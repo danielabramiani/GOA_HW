@@ -116,11 +116,9 @@
             
 
 
-name = "daniel
-
-if name == "daniel":
-    print("my name is daniel")
-elif name == "anonym":
-    print("my name is anonym")
-else:
-    print("im not daniel")
+def get_count(sentence):
+    count = 0
+    for char in sentence:
+        if char in "aeiouAEIOU":
+            count += 1
+    return count

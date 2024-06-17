@@ -14,10 +14,10 @@
         <nav>
           <ul>
             <li><a href="#main" id="main">მთავარი</a></li>
-            <li><a href="#about">შესახებ</a></li>
-            <img src="./img/download.jpg" id="img">
-            <li><a href="#">მენტორები</a></li>
-            <li><a href="#">ლიდერები</a></li>
+            <li><a href="#stat">შესახებ</a></li>
+            <img src="./img/GOA.png" id="img">
+            <li><a href="#comment">კომენტარები</a></li>
+            <li><a href="#more">მეტი ინფორმაცია</a></li>
           </ul>
         </nav>
       </header>
@@ -26,14 +26,14 @@
         <div class="img-text">
           <h2>შემოუერთდი გოას იყავი chad!</h2>
           <div class="img">
-            <img src="img/download.jpg" alt="GOA">
+            <img src="img/GOA.png" alt="GOA">
           </div>
         </div>
       </main>
 
       <div id="stat">
         <div class="containe">
-          <h2 class="sub-title"><span>სტატისტიკა</span></h2>
+          <h2 class="sub-title">გოას შესახებ</h2>
           <div class="services-list">
             <div>
               <img src="./img/people-removebg-preview.png" alt="g" class="image">
@@ -43,24 +43,93 @@
                 მოსწავლე</p>
             </div>
             <div>
-              <img src="./images/html-removebg-preview.png" alt="g" class="img">
-              <h2>Html & Css</h2>
+              <img src="./img/mentor-removebg-preview.png" alt="g" class="img">
+              <h2>მენტორები</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                Reiciendis illo hic repellendus ducimus animi fugit esse dolorum eaque nemo 
-                quasi</p>
+                გოაში არის 8 მენტორი</p>
             </div>
             <div>
-              <img src="./images/py-removebg-preview.png" alt="" class="img">
-              <h2>Python</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                Reiciendis illo hic repellendus ducimus animi fugit esse dolorum eaque nemo 
-                quasi</p>
+              <img src="./img/goa_steps.jpg" alt="" class="img">
+              <h2>გოას სწავლება</h2>
+              <p>გოაში ისწავლება:<br>
+                Python,Html&Css,Git&Github,JavaScript,React,<br>
+                Django,MySql,Artificial Intelegence
+              </p>
             </div>
           </div>
         </div>
       </div>
       
+      <div class="slider" id="comment">
+        <div class="slide slide--1">
+            <div class="testimonial">
+                <h5 class="testimonial__header">
+                    GOA BEST!
+                </h5>
+                <blockquote class="testimonial__text">
+                    გოაში მთავარია დისციპლინა
+                </blockquote>
+                <address class="testimonial__author">
+                    <img src="./img/luka.png" alt="" class="testimonial__photo"/>
+                    <h6 class="testimonial__name">Luka Tskhvaradze</h6>
+                    <p class="testimonial__location">
+                        age: 18<br>
+                        Kutaisi, Georgia
+                    </p>
+                </address>
+            </div>
+        </div>
+
+        <div class="slide slide--2">
+            <div class="testimonial">
+                <h5 class="testimonial__header">
+                    შემოუერთდი გოას იყავი chad!
+                </h5>
+                <blockquote class="testimonial__text">
+                  ჩემთვის მთავარია ბავშვების დამოკიდებულება<br> სწავლასთან
+                </blockquote>
+                <address class="testimonial__author">
+                    <img src="./img/nika.png" alt="" class="testimonial__photo"/>
+                    <h6 class="testimonial__name">Nika Keshelava</h6>
+                    <p class="testimonial__location">age:23<br>
+                      Tbilisi, Georgia</p>
+                </address>
+            </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+    </div>
+</section>
+<footer class="footer" id="more">
+  <ul class="footer__nav">
+      <li class="footer__item">
+          <a class="footer__link" href="https://www.facebook.com/keshka11?locale=ka_GE">მფლობელი</a>
+      </li>
+      <li class="footer__item">
+          <a class="footer__link" href="https://www.youtube.com/watch?v=2VkqIEqcFY0">რა იქნება თქვენთვის კარგი</a>
+      </li>
+      <li class="footer__item">
+          <a class="footer__link" href="https://www.youtube.com/watch?v=3h13SK0Ep70&t=1s">რატომ უნდა აირჩოთ გოა</a>
+      </li>
+      <li class="footer__item">
+          <a class="footer__link" href="https://www.youtube.com/watch?v=lEomc9D-TVY">ჰაკათუნი</a>
+      </li>
+      <li class="footer__item">
+          <a class="footer__link" href="https://www.facebook.com/nika11keshelava?locale=ka_GE">დაგვიკავშირდით</a>
+      </li>
+  </ul>
+  <img
+      src="./img/GOA.png"
+      alt="Logo"
+      class="footer__logo"
+  />
+  <p class="footer__copyright">
+     @footer__copyright by Daniel Abramiani
+  </p>
+</footer>
+
+<script src="./script.js"></script>
 </body>
 </html>
