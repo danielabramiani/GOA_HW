@@ -21,14 +21,11 @@ body {
     background-color: #1a1919;
 }
 
-/* SLIDER */
 .slider {
     max-width: 100rem;
     height: 50rem;
     margin: 0 auto;
     position: relative;
-
-    /* IN THE END */
     overflow: hidden;
 }
 
@@ -41,13 +38,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* THIS creates the animation! */
     transition: transform 1s;
 }
 
 .slide > img {
-    /* Only for images that have different size than slide */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -57,7 +51,6 @@ body {
     position: absolute;
     top: 50%;
     z-index: 10;
-
     border: none;
     background: rgba(255, 255, 255, 0.7);
     font-family: inherit;
@@ -97,9 +90,6 @@ body {
     margin-right: 1.75rem;
     cursor: pointer;
     transition: all 0.5s;
-
-    /* Only necessary when overlying images */
-    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
@@ -111,7 +101,6 @@ body {
     opacity: 1;
 }
 
-/* TESTIMONIALS */
 .testimonial {
     width: 65%;
     position: relative;

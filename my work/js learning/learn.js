@@ -816,7 +816,6 @@ const inventory = {
   bags: 1344
 };
 
-// Write your code below:
 const myExecutor = (resolve, reject) => {
     if (inventory.sunglasses > 0) {
         resolve('Sunglasses order processed.');
@@ -881,11 +880,9 @@ const order = {
 
 checkInventory(order)
 .then((resolvedValueArray) => {
-  // Write the correct return statement here:
  return processPayment(resolvedValueArray);
 })
 .then((resolvedValueArray) => {
-  // Write the correct return statement here:
   return shipOrder(resolvedValueArray);
 })
 .then((successMessage) => {
